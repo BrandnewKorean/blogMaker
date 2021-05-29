@@ -1,4 +1,5 @@
 # Site settings
+site: "https://brandnewkorean.github.io" 
 title: BKBlog
 description: "Dev Blog by BrandnewKorean"
 url: "https://brandnewkorean.github.io"

@@ -11,7 +11,7 @@ before_script:
   - git config --global user.email "window3809@naver.com"
   - git config --global user.name "BrandnewKorean"
 
-script: bundle exec rake site:deploy --quiet #--trace
+#script: bundle exec rake site:deploy --quiet #--trace
 
 env:
   global:
