@@ -1,0 +1,21 @@
+sudo: false
+language: ruby
+cache: bundler
+rvm:
+  - 2.4.2
+
+install:
+  - bundle install
+
+before_script:
+  - git config --global user.email "window3809@naver.com"
+  - git config --global user.name "BrandnewKorean"
+
+script: bundle exec rake site:deploy --quiet #--trace
+
+env:
+  global:
+    secure: "XDq51teYHmlWPkiMxzMxjJy9DnCyhmhuaQif1gepXN72lpSV+GDMPCO086G97cI2fEDl+8MfELo58zaCbG+8Fzxp8uq8dfFiZVsM2hC94HmUIqtrkH6Df1zbcLXHAbyj9ohkyWY/fxzLPOFWfT8T1IpVU5/X8BKA3MpAwJ6RTfikk8MNoVkSFs8hkmL7DvMRzQP8jOLcARTJjO4Zry1F5HmSXoxO2uGxNjujizKetQluRJgAadkckK0ZAlCgranaRGOfuRL/13uhk+PZPoqfSofP1RpM4F4OHIElhITefHFGDeqcJAkB20omiO4bwcwl0CX7C1OEbRPcjG8yKTAL4U52FO2bZa25xB9ckVhTmnDsv4rfXHXXfUjH6n3XxthT0u95oOqPZTLyaNgi1knGF4P9qD7hE1FIdu9nsOH6jmDk1G5rzvogM4FG4WfFyAkt4lLzzKA5bU53lTCVCnqr+NEsrgnUSjFAyjVHUzaSEBO+TxV0dr2pJ/eqyTT3rL1/75aZK3skfqHh6RoLgORiAThvvPamLnPB6KujJ9nc08/eKTgqIku6JQWA1YkZrW89ZSNNjrrE1GCJMNUAnu/dJuZnm7iNPza7nX3tB7uuOVn2SyeL6xAcuBVksSd7jMqmsvLxvdT29sP4WKAF+mM2nvV+UEtswJvJl1uVZZBKKws="
+branches:
+  only:
+    - master

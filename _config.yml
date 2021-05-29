@@ -7,6 +7,16 @@ lang: "ko_KR"
 timezone: "Asia/Seoul"
 destination: ./bkblog
 
+production_url: https://brandnewkorean.github.io/
+source_url: https://github.com/BrandnewKorean/blogMaker
+
+safe: False
+lsi: False
+
+username: brandnewkorean
+repo: blogMaker
+branch: master
+
 #Author
 author:
   name: BrandnewKorean

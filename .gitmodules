@@ -1,0 +1,3 @@
+[submodule "bkblog"]
+	path = bkblog
+	url = https://github.com/BrandnewKorean/brandnewkorean.github.io
