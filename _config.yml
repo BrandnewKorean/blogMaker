@@ -1,0 +1,32 @@
+# Site settings
+title: BKBlog
+description: "Dev Blog by BrandnewKorean"
+url: "https://brandnewkorean.github.io"
+baseurl: ""
+lang: "ko_KR"
+timezone: "Asia/Seoul"
+destination: ./bkblog
+
+#Author
+author:
+  name: BrandnewKorean
+  email: brandnewkorean@naver.com
+  url: "https://brandnewkorean.github.io"
+
+#Posts
+posts:
+  url: /posts
+
+#Plugins
+plugins:
+  - jekyll-paginate-v2
+pagination:
+  enabled: true
+  per_page: 5
+  sort_reverse: true
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
